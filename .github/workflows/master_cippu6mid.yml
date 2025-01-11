@@ -16,4 +16,4 @@ jobs:
     - name: Install dependencies
       run: npm install
     - name: Deploy
-      run: next build && next export
+      run: npm run build
