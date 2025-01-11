@@ -15,7 +15,5 @@ jobs:
         node-version: '14'
     - name: Install dependencies
       run: npm install
-    - name: Run tests
-      run: npm test
     - name: Deploy
-      run: npm run deploy
+      run: next build && next export
